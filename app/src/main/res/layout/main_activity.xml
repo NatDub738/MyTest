@@ -37,7 +37,7 @@
         android:id="@+id/str_home"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -191,7 +191,6 @@
             app:layout_constraintStart_toEndOf="@id/cardView5"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             tools:layout_editor_absoluteX="248dp" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -200,7 +199,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="8dp"
-        android:visibility="visible"S
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -267,7 +266,7 @@
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:background="#253334"
-        app:itemIconTint="@color/white"
+        app:itemIconTint="@drawable/navig_color"
         app:itemTextColor="#253334"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
