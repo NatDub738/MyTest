@@ -1,20 +1,20 @@
 package com.example.mytest;
 
 public class UserLoginModel {
-    private String login;
+    private String email;
     private String password;
 
-    public UserLoginModel(String login, String password) {
-        this.login = login;
+    public UserLoginModel(String email, String password) {
+        this.email = email;
         this.password = password;
     }
 
     public String getLogin() {
-        return login;
+        return email;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setLogin(String email) {
+        this.email = email;
     }
 
     public String getPassword() {

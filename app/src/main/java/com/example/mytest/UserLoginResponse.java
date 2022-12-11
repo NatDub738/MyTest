@@ -1,16 +1,18 @@
 package com.example.mytest;
 
-public class UserLoginResponse {
+import java.io.Serializable;
+
+public class UserLoginResponse implements Serializable {
     private String id;
-    private String login;
-    private String nameNick;
+    private String email;
+    private String nickName;
     private String avatar;
     private String token;
 
-    public UserLoginResponse(String id, String login, String nameNick, String avatar, String token) {
+    public UserLoginResponse(String id, String email, String nickName, String avatar, String token) {
         this.id = id;
-        this.login = login;
-        this.nameNick = nameNick;
+        this.email = email;
+        this.nickName = nickName;
         this.avatar = avatar;
         this.token = token;
     }
@@ -24,19 +26,19 @@ public class UserLoginResponse {
     }
 
     public String getLogin() {
-        return login;
+        return email;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setLogin(String email) {
+        this.email = email;
     }
 
     public String getNameNick() {
-        return nameNick;
+        return nickName;
     }
 
-    public void setNameNick(String nameNick) {
-        this.nameNick = nameNick;
+    public void setNameNick(String nickName) {
+        this.nickName = nickName;
     }
 
     public String getAvatar() {
