@@ -40,7 +40,14 @@ public class LoginActivity extends AppCompatActivity {
             String password = passwordid.getText().toString();
             UserLoginModel user_login_model = new UserLoginModel(login, password);
 
-
+            if (login.length() == 0) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Проверте почту! Вы оставили это поле пустым!",
+                        Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();
+                return;
+            }
             if (!(login.contains("@") && login.length() > 5)) {
                 Toast toast = Toast.makeText(getApplicationContext(),
                         "Проверте почту! Необходимо присутсвие @ и минимум 5 других символов!",
@@ -48,14 +55,7 @@ public class LoginActivity extends AppCompatActivity {
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
                 return;
-            } if (login.length() == 0) {
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Проверте почту! Вы оставили это поле пустым!",
-                        Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER, 0, 0);
-                toast.show();
-                return;
-            }if (password.length() == 0) {
+            } if (password.length() == 0) {
                 Toast toast = Toast.makeText(getApplicationContext(),
                         "Проверте пароль! Вы оставили поле пустым!",
                         Toast.LENGTH_SHORT);
